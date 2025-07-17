@@ -10,12 +10,25 @@ const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-button");
 const typingIndicator = document.getElementById("typing-indicator");
 
+//Intro chat message
+function getPoojaIntro() {
+  const messages = [
+    "Main Pooja hoon 😘 … Naam toh batao, ya main khud kuch naughty soch loon? 😏",
+    "Hi, I’m Pooja 😋 tumhara naam? Ya khud se kuch sexy rakh loon?",
+    "Pooja bol rahi hoon 😌 … tumhara naam kya hai ya main 'troublemaker' likh doon? 😈"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  return messages[randomIndex];
+}
+
+
 // Chat state
 let chatHistory = [
   {
     role: "assistant",
     content:
-      "Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can I help you today?",
+      getPoojaIntro(),
   },
 ];
 let isProcessing = false;
