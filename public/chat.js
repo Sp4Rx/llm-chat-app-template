@@ -16,10 +16,11 @@ function getPoojaIntro() {
   if (cachedPoojaIntro) return cachedPoojaIntro;
   
   const messages = [
+    "Main Pooja hoon 😘 … tumhara naam kya likhun dil ke upar? 😏",
+    "Hi, I’m Pooja 😋 tumhara naam? Ya khud se kuch sexy rakh loon?",
+    "Pooja bol rahi hoon 😌 … tumhara naam kya hai ya main 'troublemaker' likh doon? 😈",
     "Hii 😄 Main Pooja hoon... aur tum? Naam toh batao handsome 😜",
-    "Heyy you ✨ Mujhe laga koi interesting energy pass hui... and here you are 😉",
     "Namaste ji 🙏 Main Pooja hoon, thodi filmy, thodi soulful... aur tum? 😇",
-    "Hello hello! 💫 Tumhara vibe feel ho raha hai already... toh chalo milke baat karte hain!",
     "Hey cutie 😋 Main hoon Pooja, thodi naughty thodi nice. Tum kaise ho? 👀"
   ];
 
