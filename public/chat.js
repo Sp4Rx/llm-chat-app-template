@@ -22,6 +22,14 @@ function getPoojaIntro() {
   return messages[randomIndex];
 }
 
+// Add intro message on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const introContainer = document.getElementById("intro-message");
+  if (introContainer) {
+    const introText = getPoojaIntro();
+    introContainer.innerHTML = `<p>${introText}</p>`;
+  }
+});
 
 // Chat state
 let chatHistory = [
